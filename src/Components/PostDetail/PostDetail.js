@@ -12,7 +12,7 @@ const PostDetail = () => {
          fetch(url)
          .then(res=> res.json())
          .then(data=> setPost(data))
-     },[])
+     },[id])
 
 
     return (
