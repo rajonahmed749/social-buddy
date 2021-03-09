@@ -8,13 +8,15 @@ import {
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import PostDetail from './Components/PostDetail/PostDetail';
+import Post from './Components/Post/Post';
 
 function App() {
+
   return (
     <div style={{textAlign:'center'}}>
       <Router>
       <div>
-        <ul>
+        <ul >
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -47,6 +49,7 @@ function App() {
           <Route path='/post/:id'>
             <PostDetail></PostDetail>
           </Route>
+          
         </Switch>
       </div>
     </Router>
