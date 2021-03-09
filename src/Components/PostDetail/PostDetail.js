@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { Link} from "react-router-dom";
 
 const PostDetail = () => {
     const{id}= useParams()
@@ -20,6 +21,7 @@ const PostDetail = () => {
             <h3>Posted by : {name} </h3>
             <h4>Email :  {email} </h4>
             <p>{body}</p>
+            <Link to='/'><button>Go Back</button></Link>
         </div>
     );
 };
